@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(https://images.pexels.com/photos/3804409/pexels-photo-3804409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    backdrop-filter:blur(2px);
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav{
+    background: #fafafac3;
+    height: 105px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav>h1{
+    font-size: 50px;
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#addbtn{
+    height: 85px;
+    width: 85px;
+    position: fixed;
+    bottom: 35px;
+    right: 45px;
+    border-radius: 50%;
+    background-color: rgb(185, 137, 98);
+    font-size: 55px;
+    color: rgb(52, 51, 51);
+}
+
+#popup{
+    height: 320px;
+    width: 450px;
+    border-radius: 25px;
+    padding: 0px 20px;
+    padding-top: 15px;
+    position: fixed;
+    text-align: justify;
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 120px 140px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(178, 145, 107);
+}
+
+#popup>input{
+    height: 25px;
+    width: 180px;
+    border: 0;
+    border-bottom: 1px solid rgba(6, 6, 6, 0.405);
+    background: transparent;
+    outline: 0;
+    padding-left: 5px;
+}
+
+#popup>textarea{
+    height: 85px;
+    width: 180px;
+    border: 0;
+    border: 1px solid rgba(6, 6, 6, 0.405);
+    background:transparent;
+    outline: 0;
+    padding-left: 5px;
+}
+
+
+#popup>button{
+    height: 27px;
+    width: 80px;
+    font-size: 15px;
+    background: transparent;
+    border: 0;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left:15px;
+}
+
+#overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    overflow: auto;
+}
+
+#overlay>div{
+    /* height: 40%; */
+    width: 21%;
+    background-color: rgba(232, 207, 163, 0.342);
+    text-align: justify;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#overlay>div>h1{
+    margin-top: -13px;
+    font-size: 30px;
+    /* color: blue; */
+    text-transform: capitalize;
+
+}
+#overlay>div>.authorname{
+    margin-top: 10px;
+    text-align: end;
+    font-size: 22px;
+    /* color: red; */
+
+}
+#overlay>div>p{
+    margin-top: 15px;
+    font-size: 18px;
+    text-indent: 35px;
+    text-align: justify;
+    
+}
+
+#overlay>div>#deletebtn{
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 145px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    border: 1px solid black;
+    border-radius: 15px;
+}
